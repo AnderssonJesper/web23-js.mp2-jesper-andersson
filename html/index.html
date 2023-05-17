@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sten Sax Påse</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/javascript/js.js" defer ></script>
+<script src="https://kit.fontawesome.com/d9d8680faf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<h1>Let's Play A Game!</h1>
+<div id="container">
+<div id="game">
+<div id="player">
+<label for="player-name">Ditt namn:</label>
+<input type="text" id="player-name" placeholder="Ange ditt namn">
+</div>
+<div id="scoreboard">
+<span id="player-score">0</span> : <span id="computer-score">0</span>
+</div>
+
+<div id="choices">
+    <button onclick="play('sten')"><i class="fa-regular fa-hand-back-fist"></i></button>
+    <button onclick="play('påse')"><i class="fa-regular fa-hand"></i></button>
+    <button onclick="play('sax')"><i class="fa-regular fa-hand-scissors"></i></button>
+</div>
+
+<div id="results">
+<p id="player-choice"></p>
+<p id="computer-choice"></p>
+<p id="round-result"></p>
+<p id="winner"></p>
+</div>
+<button id="restart-button" onclick="restartGame()">Starta om</button>
+</div>
+</div>
+
+
+</body>
+</html>
